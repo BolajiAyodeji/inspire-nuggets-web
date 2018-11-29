@@ -52,6 +52,7 @@ p {
 
 .call {
   color: #202020;
+  font-size: 25px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -130,8 +131,15 @@ p {
 /* for the instructions at the bottom */
 
 .bottom {
-  bottom: 10;
+  bottom: 0;
+  text-align: center;
   position: absolute;
   color: #454545;
   font-family: 'Poppins', sans-serif;
 }
+
+.bottom .copy {
+  font-size: 1em;
+}
+
+.bottom .cop
