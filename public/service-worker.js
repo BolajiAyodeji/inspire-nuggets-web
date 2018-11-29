@@ -29,11 +29,11 @@ self.addEventListener('fetch', function (event) {
                   //cache.addAll(), takes a list of URLs, then fetches them from the server and adds the response to the cache.
                   // add your entire site to the cache- as in the code below; for offline access
                   '/', // do not remove this
-                  '/index.html', //default
-                  '/css/app.css',
-                  '/js/app.js',
+                  './index.html', //default
+                  './css/app.css',
+                  './js/app.js',
                   // Do not replace/delete/edit the service-worker.js/ and manifest.js paths below
-                  '/manifest.js',
+                  './manifest.js',
                   //These are links to the extenal social media buttons that should be cached; we have used twitter's as an example
                   'https://platform.twitter.com/widgets.js',
                 ])
