@@ -42,6 +42,21 @@ function startDate() {
   document.getElementById("date").innerHTML = days[d.getDay()] + " | " + [d.getMonth() + 1] + "/" + d.getDate() + "/" + d.getFullYear();
 }
 
+function tweet(message) {
+  window.open('https://twitter.com/intent/tweet?hashtags= #InspireNuggets&text=' + encodeURIComponent(message));
+  // when you click on this function, it opens the window with text ready to be inputted
+  // smart way to slice  window.open("https://twitter.com/intent/tweet?text=" + currentQuote.slice(0, 136) + "...");
+}
+
+var tweetmsg;
+var tweetname;
+
+function tweetHandler() {
+  var message = tweetmsg + " " + tweetname
+  tweet(message);
+  //tweet(msg);
+}
+
 //Trigger for mobile
 $('#trigger-btn').click(function() {
   $("#quote").addClass("reset");
