@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
 
 html,
 body {
@@ -6,7 +7,7 @@ body {
   height: auto;
   background: #202020;
   background-image: url('https://images.pexels.com/photos/1252869/pexels-photo-1252869.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   background-position: top;
   z-index: -2;
   display: table;
@@ -25,7 +26,7 @@ p {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  padding: 3em;
+  padding: 1em;
 }
 
 #display {
@@ -33,7 +34,7 @@ p {
   font-size: 2.9em;
   top: 10px;
   border-bottom: thin solid;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   opacity: 0.80;
   filter: alpha(opacity=80);
   /* For IE8 and earlier */
@@ -51,8 +52,8 @@ p {
 }
 
 .call {
-  color: #202020;
-  font-size: 25px;
+  color: #E8E8E8 ;
+  font-size: 18px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -61,7 +62,6 @@ p {
 }
 
 .container {
-  padding-top: 6em;
   text-align: center;
 }
 
@@ -81,7 +81,7 @@ p {
   color: #FFF;
   font-family: 'Poppins', sans-serif;
   position: relative;
-  font-size: 12px;
+  font-size: 9px;
 }
 
 /* source css */
@@ -136,10 +136,5 @@ p {
   position: absolute;
   color: #454545;
   font-family: 'Poppins', sans-serif;
+  font-size: 9px;
 }
-
-.bottom .copy {
-  font-size: 1em;
-}
-
-.bottom .cop

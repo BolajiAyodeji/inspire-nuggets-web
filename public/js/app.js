@@ -9,7 +9,7 @@ function startTime() {
   if (h > 12) {
     h = h - 12;
     ampm = " PM";
-  } else if (h == 12) {
+  } else if (h == 12 && m == 0) {
     h = 12;
     ampm = " AM";
   } else if (h < 12) {
@@ -42,7 +42,21 @@ function startDate() {
   document.getElementById("date").innerHTML = days[d.getDay()] + " | " + [d.getMonth() + 1] + "/" + d.getDate() + "/" + d.getFullYear();
 }
 
+//Trigger for mobile
+$('#trigger-btn').click(function() {
+  $("#quote").addClass("reset");
+    $("#quote").removeClass("executed");
+    $("#writer").toggleClass("fade");
+    setTimeout(function () {
+      $.ajax({
+        crossOrigin: true,
+        url: "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=mycallback",
+        dataType: "jsonp"
+      });
+    }, 50);
+});
 
+//Trigger for desktop
 $(window).keypress(function (e) {
   if (e.which === 32) {
     $("#quote").addClass("reset");
